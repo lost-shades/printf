@@ -5,6 +5,7 @@
 /**
  * putka - function to output a char
  * @c: character to be printed
+ * Return: always 0
  */
 int putka(char c)
 {
