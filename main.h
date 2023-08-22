@@ -5,5 +5,6 @@
 
 int putka(char c);
 int _printf(const char *format, ...);
+int print_num(va_list args);
 
 #endif
