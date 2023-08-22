@@ -39,7 +39,6 @@ return (count);
 
 int handle_format(const char *format, va_list args)
 {
-char c = va_arg(args, int);
 int count = 0;
 int i;
 
@@ -51,7 +50,7 @@ if (format[i] == '%' && format[i + 1] != '\0')
 	switch (format[i])
 		{
 			case 'c':
-                                putka(c);
+                                putka(format[i]);
                                 count++;
 				break;
 			case 's':
