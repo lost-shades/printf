@@ -9,9 +9,12 @@
 */
 int print_num(va_list args)
 {
-int chars_printed = 0;
-int n = va_arg(args, int);
+int chars_printed;
+int n;
 unsigned int m, d, count;
+
+n = va_arg(args, int);
+chars_printed = 0;
 if (n < 0)
 {
 putka('-');
