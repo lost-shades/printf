@@ -44,8 +44,3 @@ chars_printed++;
 
 return (chars_printed);
 }
-int v(char, n);
-
-/**
- *unit - prints integers
- *bin _
