@@ -50,7 +50,7 @@ if (format[i] == '%' && format[i + 1] != '\0')
 	switch (format[i])
 		{
 			case 'c':
-                                putka(format[i]);
+                                putka(va_arg(args, int));
                                 count++;
 				break;
 			case 's':
