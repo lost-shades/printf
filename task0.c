@@ -13,10 +13,9 @@ return (0);
 
 /**
 * print_string - function to print string
-* @s: pointer to string
+* @args: pointer to string
 * Return: count if successful
 */
-
 int print_string(va_list args)
 {
 char *s = va_arg(args, char *);
@@ -46,35 +45,35 @@ for (i = 0; format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] != '\0')
 {
-	i++;
-	switch (format[i])
-		{
-			case 'c':
-                                putka(va_arg(args, int));
-                                count++;
-				break;
-			case 's':
-				count += print_string(args);
-				break;
-			case '%':
-				putka('%');
-				count++;
-				break;
-			case 'i':
-			case 'd':
-				count += print_num(args);
-				break;
-			default:
-				putka('%');
-				putka(format[i]);
-				count += 2;
-				break;
-		}
+i++;
+switch (format[i])
+{
+case 'c':
+putka(va_arg(args, int));
+count++;
+break;
+case 's':
+count += print_string(args);
+break;
+case '%':
+putka('%');
+count++;
+break;
+case 'i':
+case 'd':
+count += print_num(args);
+break;
+default:
+putka('%');
+putka(format[i]);
+count += 2;
+break;
+}
 }
 else
 {
-	putka(format[i]);
-	count++;
+putka(format[i]);
+count++;
 }
 }
 return (count);
