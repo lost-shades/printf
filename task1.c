@@ -4,7 +4,6 @@
 
 /**
 * print_num - prints an integer
-* @format: number of variable arguments
 * @args: argument holder
 * Return: characters printed
 */
