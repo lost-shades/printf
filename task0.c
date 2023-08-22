@@ -44,7 +44,7 @@ int count;
 int i;
 
 count = 0;
-for (i = 0; format[i] != '\0'; i++)
+for (i = 0; format[i] && format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] != '\0')
 {
