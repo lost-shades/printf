@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <unistd.h>
+#include "main.h"
 /**
  * printer - inputs a character into a variable address
  * @c: character to input
