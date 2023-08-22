@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -19,8 +17,9 @@ return (0);
 * Return: count if successful
 */
 
-int print_string(char *s)
+int print_string(va_list args)
 {
+char *s = va_arg(args, char *);
 int count = 0;
 
 while (*s != '\0')
