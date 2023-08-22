@@ -63,21 +63,3 @@ int print_num(const char *format, va_list args)
 	}
 	return (chars_printed);
 }
-/**
- * _printf - printf string according to format specified
- * @format: The format string specifying the
- * types of arguments to be printed.
- * Return: the number of characters printed
- * (excluding the null byte used to end output to strings)
- */
-int _printf(const char *format, ...)
-{
-	va_list args;
-	int char_printed;
-	va_start(args, format);
-	if (format == NULL || format[0] == '%' && format[1] == '\0')
-		return (-1);
-	char_printed = print_num(format, args);
-	va_end(args);
-	return (char_printed);
-}
