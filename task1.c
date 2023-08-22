@@ -43,19 +43,4 @@ chars_printed++;
 }
 
 return (chars_printed);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
