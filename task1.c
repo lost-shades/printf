@@ -28,7 +28,7 @@ count *= 10;
 }
 for (; count >= 1; count /= 10)
 {
-putka(((m / count) % 10) + 48);
+putka(((m / count) % 10) + '0');
 chars_printed++;
 }
 return (chars_printed);
