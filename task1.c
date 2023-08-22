@@ -42,5 +42,5 @@ putka((m / count) % 10 + '0');
 chars_printed++;
 }
 
-return (chars_printed);
+retun (chars_printed);
 }
