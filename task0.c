@@ -18,9 +18,11 @@ return (0);
 */
 int print_string(va_list args)
 {
-char *s = va_arg(args, char *);
-int count = 0;
+char *s;
+int count;
 
+count = 0;
+s = va_arg(args, char *);
 while (*s != '\0')
 {
 putka(*s++);
@@ -38,9 +40,10 @@ return (count);
 
 int handle_format(const char *format, va_list args)
 {
-int count = 0;
+int count;
 int i;
 
+count = 0;
 for (i = 0; format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] != '\0')
