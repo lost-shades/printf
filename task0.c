@@ -95,6 +95,7 @@ va_list args;
 int sentence;
 
 va_start(args, format);
+sentence = 0;
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 return (-1);
 sentence = handle_format(format, args);
