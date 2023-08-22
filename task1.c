@@ -7,7 +7,7 @@
 * @args: argument holder
 * Return: characters printed
 */
-int print_num(va_list args) 
+int print_num(va_list args)
 {
 int chars_printed;
 int n;
@@ -16,7 +16,7 @@ unsigned int m, d, count;
 n = va_arg(args, int);
 chars_printed = 0;
 
-if (n < 0) 
+if (n < 0)
 {
 putka('-');
 m = -n;
@@ -34,6 +34,7 @@ while (d > 9)
 d /= 10;
 count *= 10;
 }
+
 
 for (; count >= 1; count /= 10)
 {
