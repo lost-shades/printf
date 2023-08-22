@@ -42,5 +42,11 @@ putka((m / count) % 10 + '0');
 chars_printed++;
 }
 
-return (((chars_printed);
+return (chars_printed);
 }
+
+int v(char, n);
+
+/**
+ *unit - prints integers
+ *bin _ 
