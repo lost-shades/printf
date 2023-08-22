@@ -13,7 +13,7 @@ int chars_printed;
 unsigned int n;
 unsigned int m, d, count;
 
-n = va_arg(args, int);
+n = va_arg(args, unsigned int);
 chars_printed = 0;
 
 if ((signed int) n < 0)
