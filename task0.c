@@ -23,6 +23,8 @@ int count;
 
 count = 0;
 s = va_arg(args, char *);
+if (s == NULL)
+s = "(null)";
 while (*s != '\0')
 {
 putka(*s++);
