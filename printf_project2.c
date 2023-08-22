@@ -12,12 +12,12 @@ int printer(char c)
 	return (0);
 }
 /**
- * print_num - prints an integer
+ * handle_format - prints an integer
  * @format: number of variable arguments
  * @args: argument holder
  * Return: characters printed
  */
-int print_num(const char *format, va_list args)
+int handle_format(const char *format, va_list args)
 {
 	int chars_printed = 0;
 	const char *c;
