@@ -40,7 +40,7 @@ for (; (signed int) count >= 1; count /= 10)
 {
 putka((m / count) % 10 + '0');
 chars_printed++;
+
+
+eturn (chars_printed);
 }
-
-return (chars_printed)
-
