@@ -5,6 +5,7 @@
 /**
  * putka - function to output a char
  * @c: character to be printed
+ * Return: always 0
  */
 int putka(char c)
 {
@@ -94,7 +95,7 @@ int _printf(const char *format, ...)
 	int sentence;
 
 	va_start(args, format);
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	sentence = handle_format(format, args);
 
