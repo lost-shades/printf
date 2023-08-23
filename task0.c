@@ -67,22 +67,6 @@ case 'i':
 case 'd':
 count += print_num(args);
 break;
-case 'p':
-count += print_hex(args);
-break;
-case 'u':
-putka(va_arg(args, unsigned int));
-break;
-case 'o':
-putka(va_arg(args, unsigned int));
-break;
-case 'x':
-putka(va_arg(args, unsigned int));
-break;
-case 'X':
-putka(va_arg(args, unsigned int));
-
-break;
 default:
 putka('%');
 putka(format[i]);
