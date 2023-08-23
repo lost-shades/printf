@@ -68,20 +68,17 @@ case 'd':
 count += print_num(args);
 break;
 case 'u':
-unsigned int u = va_arg(args, unsigned int);
-count += putka(args);
+putka(va_arg(args, unsigned int));
 break;
 case 'o':
-unsigned int o = va_arg(args, unsigned int);
-count += putka(args);
+putka(va_arg(args, unsigned int));
 break;
 case 'x':
-unsigned int x = va_arg(args, unsigned int);
-count += putka(args);
+putka(va_arg(args, unsigned int));
 break;
 case 'X':
-unsigned int X = va_arg(args, unsigned int);
-count += putka(args);
+putka(va_arg(args, unsigned int));
+
 break;
 default:
 putka('%');
