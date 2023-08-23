@@ -68,19 +68,19 @@ case 'd':
 count += print_num(args);
 break;
 case 'u':
-unsigned int num_u = va_arg(args, unsigned int);
+unsigned int u = va_arg(args, unsigned int);
 count += putka(args);
 break;
 case 'o':
-unsigned int num_o = va_arg(args, unsigned int);
+unsigned int o = va_arg(args, unsigned int);
 count += putka(args);
 break;
 case 'x':
-unsigned int num_x = va_arg(args, unsigned int);
+unsigned int x = va_arg(args, unsigned int);
 count += putka(args);
 break;
 case 'X':
-unsigned int num_X = va_arg(args, unsigned int);
+unsigned int X = va_arg(args, unsigned int);
 count += putka(args);
 break;
 default:
