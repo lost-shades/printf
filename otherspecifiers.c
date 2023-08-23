@@ -51,7 +51,7 @@ return (s);
 
 void rev_string(char *s)
 {
-int length = strlen(s);
+int length = _strlen(s);
 int i, j;
 
 for (i = 0, j = length - 1; i < j; i++, j--)
