@@ -42,8 +42,7 @@ return (count);
 
 int handle_format(const char *format, va_list args)
 {
-int count;
-int i;
+int count, i;
 
 count = 0;
 for (i = 0; format[i] && format[i] != '\0'; i++)
@@ -67,6 +66,22 @@ break;
 case 'i':
 case 'd':
 count += print_num(args);
+break;
+case 'u':
+unsigned int num_u = va_arg(args, unsigned int);
+count += putka(args);
+break;
+case 'o':
+unsigned int num_o = va_arg(args, unsigned int);
+count += putka(args);
+break;
+case 'x':
+unsigned int num_x = va_arg(args, unsigned int);
+count += putka(args);
+break;
+case 'X':
+unsigned int num_X = va_arg(args, unsigned int);
+count += putka(args);
 break;
 default:
 putka('%');
