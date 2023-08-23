@@ -10,6 +10,7 @@ int print_string(va_list args);
 int handle_format(const char *format, va_list args);
 int _strlen(char *s);
 char *rot13(char *s);
+void rev_string(char *s);
 void print_rev(char *s);
 
 #endif
