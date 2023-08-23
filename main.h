@@ -12,5 +12,6 @@ int _strlen(char *s);
 char *rot13(char *s);
 void rev_string(char *s);
 void print_rev(char *s);
+void convert_to_binary(unsigned int num, char *binary, int length);
 
 #endif
