@@ -67,6 +67,8 @@ case 'i':
 case 'd':
 count += print_num(args);
 break;
+case 'p';
+putka(va_arg(args, int);
 case 'u':
 putka(va_arg(args, unsigned int));
 break;
