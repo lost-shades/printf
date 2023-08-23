@@ -14,5 +14,6 @@ void rev_string(char *s);
 void print_rev(char *s);
 void convert_to_binary(unsigned int num, char *binary, int length);
 void conversion_specifier(char specifier, va_list args);
+int print_hex(unsigned long num, int width);
 
 #endif
