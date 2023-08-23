@@ -13,19 +13,19 @@ switch (specifier)
 {
 case 'u':
 unsigned int num_u = va_arg(args, unsigned int);
-printf("%u", num_u);
+_printf("%u", num_u);
 break;
 case 'o':
 unsigned int num_o = va_arg(args, unsigned int);
-printf("%o", num_o);
+_printf("%o", num_o);
 break;
 case 'x':
 unsigned int num_x = va_arg(args, unsigned int);
-printf("%x", num_x);
+_printf("%x", num_x);
 break;
 case 'X':
 unsigned int num_X = va_arg(args, unsigned int);
-printf("%X", num_X);
+_printf("%X", num_X);
 break;
 }
 }
