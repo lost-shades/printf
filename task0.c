@@ -32,6 +32,7 @@ count++;
 break;
 case 'b':
 count += printbinary(args);
+break;
 case 'i':
 case 'd':
 count += print_num(args);
