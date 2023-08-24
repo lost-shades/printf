@@ -73,6 +73,7 @@ return (chars_printed);
 
 int print_binary(va_list args)
 {
+unsigned int n = va_arg(args, unsigned int);
 if (n == 0)
 {
 putka('0');
