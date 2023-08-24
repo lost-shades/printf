@@ -30,6 +30,8 @@ case '%':
 putka('%');
 count++;
 break;
+case 'b':
+count += printbinary(args);
 case 'i':
 case 'd':
 count += print_num(args);
