@@ -31,7 +31,7 @@ putka('%');
 count++;
 break;
 case 'b':
-count += printbinary(args);
+count += print_binary(args);
 break;
 case 'i':
 case 'd':
