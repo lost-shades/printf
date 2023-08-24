@@ -71,7 +71,7 @@ return (chars_printed);
 * Return: 0 at success
 */
 
-int print_binary(va_list args)
+unsigned int print_binary(va_list args)
 {
 unsigned int n = va_arg(args, unsigned int);
 if (n == 0)
