@@ -81,7 +81,7 @@ int j;
 if (n == 0)
 {
 putka('0');
-return 0;
+return (0);
 }
 while (n > 0)
 {
@@ -93,5 +93,5 @@ for (j = i - 1; j >= 0; j--)
 {
 putka(binary[j] + '0');
 }
-return 0;
+return (0);
 }
