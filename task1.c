@@ -64,3 +64,32 @@ chars_printed++;
 
 return (chars_printed);
 }
+
+/**
+* print_binary - prints a digit in binary
+* @args: va list
+* Return: 0 at success
+*/
+
+int print_binary(va_list args)
+{
+if (n == 0)
+{
+putka('0');
+return 0;
+}
+
+int binary[32];  /* Assuming 32-bit integers */
+int i = 0;
+
+while (n > 0)
+{
+binary[i] = n % 2;
+n /= 2;
+i++;
+}
+for (int j = i - 1; j >= 0; j--) {
+_putchar(binary[j] + '0');
+}
+return 0;
+}
