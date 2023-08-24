@@ -9,9 +9,8 @@
 
 int handle_format(const char *format, va_list args)
 {
-int count, i;
+int count = 0, i;
 
-count = 0;
 for (i = 0; format[i] && format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] != '\0')
