@@ -22,7 +22,6 @@ count++;
 return (count);
 }
 
-
 /**
 * print_reverse - Prints a string in reverse order using putchar
 * @args: Variable argument list containing additional arguments
