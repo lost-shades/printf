@@ -38,7 +38,7 @@ count = 0;
 
 for (i = length - 1; i >= 0; i--)
 {
-_putchar(enter[i]);
+putka(enter[i]);
 count++;
 }
 return (count);
