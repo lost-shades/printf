@@ -73,25 +73,36 @@ return (chars_printed);
 
 int print_binary(va_list args)
 {
-int n = va_arg(args, int);
-int binary[32];  /* Assuming 32-bit integers */
-int i = 0;
-int j;
+unsigned int n = va_arg(args, unsigned int);
+unsigned int cover;
+int plus_zeros, count;
+
+cover = 1 << (sizeof(unsigned int) * 8 - 1);
+plus_zeros = 1;
+count = 0;
 
 if (n == 0)
 {
 putka('0');
-return (0);
+count++;
+return (count);
 }
-while (n > 0)
+
+while (cover > 0)
 {
-binary[i] = n % 2;
-n /= 2;
-i++;
-}
-for (j = i - 1; j >= 0; j--)
+if (n & cover)
 {
-putka(binary[j] + '0');
+plus_zeros = 0;
+putka('1');
+count++;
 }
-return (0);
+else if (plus_zeros)
+{
+putka('0');
+count++;
+}
+cover >>= 1;
+}
+
+return (count);
 }
