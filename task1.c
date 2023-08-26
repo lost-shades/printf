@@ -36,7 +36,7 @@ unsigned int m, d, count;
 n = va_arg(args, unsigned int);
 chars_printed = 0;
 
-if ((signed int) n < 0)
+if (n < 0)
 {
 putka('-');
 m = -n;
@@ -55,7 +55,7 @@ d /= 10;
 count *= 10;
 }
 
-for (; (signed int) count >= 1; count /= 10)
+for (; count >= 1; count /= 10)
 {
 putka(((m / count) % 10) + '0');
 chars_printed++;
