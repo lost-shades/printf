@@ -34,7 +34,7 @@ counter += print_binary(args);
 break;
 default:
 putka('%');
-putka(format[i]);
+putka(c);
 counter += 2;
 break;
 }
