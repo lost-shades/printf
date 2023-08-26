@@ -10,5 +10,6 @@ int print_num(va_list args);
 int print_string(va_list args);
 int handle_format(const char *format, va_list args);
 int print_binary(va_list args);
+int choose_specifier(char c, va_list args);
 
 #endif
