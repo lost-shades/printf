@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * _strchr - finds a char in a string
@@ -52,7 +53,7 @@ rotated_str[i] = str[i];
 
 while (rotated_str[count] != '\0')
 {
-_putchar(rotated_str[count]);
+putka(rotated_str[count]);
 count++;
 }
 free(rotated_str);
