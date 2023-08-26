@@ -13,5 +13,7 @@ int print_binary(va_list args);
 int choose_specifier(char c, va_list args);
 int print_reverse(va_list args);
 int _strlen(char *s);
+char *_strchr(char *s, char c);
+int rot13(va_list args);
 
 #endif
