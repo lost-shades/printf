@@ -29,6 +29,9 @@ case 'i':
 case 'd':
 counter += print_num(args);
 break;
+case 'b':
+counter += print_binary(args);
+break;
 default:
 putka('%');
 putka(format[i]);
