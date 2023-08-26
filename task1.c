@@ -31,7 +31,7 @@ int print_num(va_list args)
 {
 int chars_printed;
 unsigned int n;
-unsigned int m, d, count;
+unsigned int d;
 
 n = va_arg(args, unsigned int);
 chars_printed = 0;
@@ -39,25 +39,21 @@ chars_printed = 0;
 if ((signed int) n < 0)
 {
 putka('-');
-m = -n;
-}
-else
-{
-m = n;
+n = -n;
+chars_printed++;
 }
 
-d = m;
-count = 1;
+d = 1;
 
-while (d > 9)
+while (n/d > 9)
 {
-d /= 10;
-count *= 10;
+d *= 10;
 }
 
-for (; (signed int) count >= 1; count /= 10)
+for (; (signed int) d >= 1; d /= 10)
 {
-putka(((m / count) % 10) + '0');
+putka((n / d) + '0');
+n %= d;
 chars_printed++;
 }
 
