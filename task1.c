@@ -30,7 +30,7 @@ return (count);
 int print_num(va_list args)
 {
 int chars_printed;
-unsigned int n;
+int n;
 unsigned int m, d, count;
 
 n = va_arg(args, unsigned int);
