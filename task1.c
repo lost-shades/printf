@@ -91,7 +91,7 @@ plus_zeros = 0;
 putka('1');
 count++;
 }
-else if (plus_zeros)
+else if (!plus_zeros)
 {
 putka('0');
 count++;
