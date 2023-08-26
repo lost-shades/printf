@@ -55,10 +55,9 @@ d /= 10;
 count *= 10;
 }
 
-
 for (; (signed int) count >= 1; count /= 10)
 {
-putka((m / count) % 10 + '0');
+putka(((m / count) % 10) + '0');
 chars_printed++;
 }
 
