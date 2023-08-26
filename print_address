@@ -1,0 +1,43 @@
+#include "main.h"
+
+/**
+* print_address -  function that print address
+* @argument: pointer
+* Return: count + 3
+*/
+
+int print_address(va_list args)
+{
+unsigned long int num = va_arg(args, unsigned long int);
+char *string;
+
+if (!num)
+{
+return (display("(nil)"));
+}
+
+char buffer[20];
+int count, i, digit;
+
+count = 0;
+while (num > 0)
+{
+digit = num % 16;
+if (digit < 10)
+buffer[count] = digit + '0';
+else
+buffer[count] = digit - 10 + 'a';
+num /= 16;
+count++;
+}
+
+buffer[count] = 'x';
+buffer[count + 1] = '0';
+
+for (i = count + 1; i >= 0; i--)
+{
+putka(buffer[i]);
+}
+
+return (count + 3);
+}
