@@ -32,6 +32,8 @@ break;
 case 'b':
 counter += print_binary(args);
 break;
+case 'r':
+counter += print_reverse(args);
 default:
 putka('%');
 putka(c);
