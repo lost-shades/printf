@@ -35,6 +35,9 @@ break;
 case 'r':
 counter += print_reverse(args);
 break;
+case 'R':
+counter += rot13(args);
+break;
 default:
 putka('%');
 putka(c);
