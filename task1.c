@@ -30,13 +30,13 @@ return (count);
 int print_num(va_list args)
 {
 int chars_printed;
-int n;
+unsigned int n;
 unsigned int m, d, count;
 
 n = va_arg(args, unsigned int);
 chars_printed = 0;
 
-if (n < 0)
+if ((signed int) n < 0)
 {
 putka('-');
 m = -n;
